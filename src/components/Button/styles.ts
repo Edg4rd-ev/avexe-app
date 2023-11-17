@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
   btn: {
-    width: '80%',
-    padding: 20,
+    width: '85%',
+    padding: 16,
     alignItems: 'center',
     borderRadius: 100
   },
@@ -21,5 +21,11 @@ export const styles = StyleSheet.create({
   elevation: {
     elevation: 4,
     shadowColor: '#444444'
+  },
+  fontStyle: {
+    fontSize: 18,
+    textShadowColor: 'hsla(0,0%,27%,0.3)',
+    textShadowOffset: { width: 0.5, height: 1 },
+    textShadowRadius: 2
   }
 })

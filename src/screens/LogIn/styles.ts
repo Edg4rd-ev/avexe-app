@@ -29,6 +29,10 @@ export const styles = StyleSheet.create({
     gap: 30
   },
   socialLoginOptions: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    width: '85%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: 30
   }
 })
