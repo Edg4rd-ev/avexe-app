@@ -1,20 +1,24 @@
-import React from 'react';
-import { Pressable, Text } from 'react-native';
-import { ButtonT } from '../../@types/Button';
+import React from 'react'
+import { Pressable, Text, View } from 'react-native'
+import { ButtonT } from '../../@types/Button'
+import { styles } from './styles'
 
-export function Button({color, title, bgColor} : ButtonT) {
-  return (
-    <Pressable style={{
-        backgroundColor:bgColor, 
-        width:'80%', 
-        padding:15, 
-        alignItems:'center',
-        borderRadius: 100,
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: 1
-      }}>
-      <Text style={{color: color}}>{title}</Text>
-    </Pressable>
-  );
+export function Button({ title, type }: ButtonT) {
+  if (type === 1) {
+    return (
+      <View style={[styles.btn, styles.btnType1, styles.elevation]}>
+        <Pressable>
+          <Text style={{ color: '#303030' }}>{title}</Text>
+        </Pressable>
+      </View>
+    )
+  } else if (type === 2) {
+    return (
+      <View style={[styles.btn, styles.btnType2, styles.elevation]}>
+        <Pressable>
+          <Text style={{ color: '#F6BE00' }}>{title}</Text>
+        </Pressable>
+      </View>
+    )
+  }
 }
