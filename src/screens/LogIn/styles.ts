@@ -13,12 +13,12 @@ export const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   logo: {
-    flex: 3,
+    flex: 1,
     width: '100%',
     justifyContent: 'center'
   },
   loginOptions: {
-    flex: 2.2,
+    flex: 2,
     borderTopStartRadius: 80,
     backgroundColor: 'white',
     width: '100%',
@@ -33,6 +33,30 @@ export const styles = StyleSheet.create({
     width: '85%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    gap: 30
+    gap: 30,
+    marginTop: 25
+  },
+  welcomeWrapper: {
+    width: '85%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20
+  },
+  welcome: {
+    fontSize: 60,
+    width: '100%',
+    textAlign: 'center',
+    marginBottom: 20
+  },
+  welcomeText: {
+    width: '100%',
+    fontSize: 22,
+    textAlign: 'justify'
+  },
+  fontStyle: {
+    fontSize: 18,
+    textShadowColor: 'hsla(0,0%,27%,0.3)',
+    textShadowOffset: { width: 0.5, height: 1 },
+    textShadowRadius: 2
   }
 })

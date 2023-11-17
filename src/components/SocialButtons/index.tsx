@@ -4,7 +4,7 @@ import { SocialButtonT } from '../../@types/SocialButton'
 import { styles } from './styles'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-export function SocialButton({ title }: SocialButtonT) {
+export function SocialButton({ title, bgColor }: SocialButtonT) {
   return (
     <Pressable
       style={({ pressed }) => [
@@ -19,6 +19,7 @@ export function SocialButton({ title }: SocialButtonT) {
             style={[
               styles.btn,
               styles.elevation,
+              { backgroundColor: bgColor },
               pressed && {
                 elevation: 1,
                 shadowColor: '#444444'
@@ -26,7 +27,7 @@ export function SocialButton({ title }: SocialButtonT) {
             ]}
           >
             <Text style={styles.fontStyle}>
-              <Icon name={title} size={25} color={'#F6BE00'} />
+              <Icon name={title} size={25} color={'#fff'} />
             </Text>
           </View>
         )
