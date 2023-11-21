@@ -1,6 +1,6 @@
 import React from 'react'
 import { Pressable, Text, View } from 'react-native'
-import { ButtonT } from '../../@types/Button'
+import { ButtonT } from '../../@types/button'
 import { styles } from './styles'
 import {
   useFonts,
@@ -8,7 +8,7 @@ import {
   Poppins_700Bold
 } from '@expo-google-fonts/poppins'
 
-export function Button({ title, type }: ButtonT) {
+export function Button({ title, type, openScreen }: ButtonT) {
   const [fontsLoaded, fontError] = useFonts({
     Poppins_400Regular,
     Poppins_700Bold
@@ -24,7 +24,7 @@ export function Button({ title, type }: ButtonT) {
           { width: '100%', alignItems: 'center' },
           pressed && { opacity: 0.8 }
         ]}
-        onPress={() => console.log()}
+        onPress={openScreen}
       >
         {({ pressed }) => {
           return (

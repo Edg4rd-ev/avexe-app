@@ -6,8 +6,13 @@ import { Button } from '../../components/Button'
 import { SocialButton } from '../../components/SocialButtons'
 
 import { useFonts } from 'expo-font'
+import { useNavigation } from '@react-navigation/native'
 
 export function LogIn() {
+  const navigation = useNavigation()
+  function openSignInScreen() {
+    navigation.navigate('signIn')
+  }
   const [fontsLoaded, fontError] = useFonts({
     Xilosa: require('../../../assets/fonts/xilosa/xilosa_.ttf'),
     Poppins_400Regular: require('../../../assets/fonts/poppins/Poppins_400Regular.ttf')
@@ -46,7 +51,7 @@ export function LogIn() {
             no fim do mês!
           </Text>
         </View>
-        <Button title="Entrar" type={1} />
+        <Button title="Entrar" type={1} openScreen={openSignInScreen} />
         <Button title="Cadastrar-se" type={2} />
         <View style={styles.socialLoginOptions}>
           <SocialButton title="google" bgColor="#DB4437" />

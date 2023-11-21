@@ -1,6 +1,6 @@
 import React from 'react'
 import { Pressable, Text, View } from 'react-native'
-import { SocialButtonT } from '../../@types/SocialButton'
+import { SocialButtonT } from '../../@types/socialButton'
 import { styles } from './styles'
 import Icon from 'react-native-vector-icons/FontAwesome'
 

@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1.5,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -18,8 +18,8 @@ export const styles = StyleSheet.create({
     width: '100%',
     justifyContent: 'center'
   },
-  loginOptions: {
-    flex: 2,
+  signInOptions: {
+    flex: 1.5,
     borderTopStartRadius: 80,
     backgroundColor: 'white',
     width: '100%',
@@ -37,22 +37,16 @@ export const styles = StyleSheet.create({
     gap: 30,
     marginTop: 25
   },
-  welcomeWrapper: {
+  loginWrapper: {
     width: '85%',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     marginBottom: 20
   },
-  welcome: {
-    fontSize: 60,
-    width: '100%',
-    textAlign: 'center',
-    marginBottom: 20
-  },
-  welcomeText: {
+  entrar: {
     width: '100%',
     fontSize: 22,
-    textAlign: 'justify'
+    textAlign: 'left'
   },
   fontStyle: {
     fontSize: 18,
