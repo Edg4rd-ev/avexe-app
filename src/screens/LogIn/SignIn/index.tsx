@@ -6,10 +6,12 @@ import { Button } from '../../../components/Button'
 import { SocialButton } from '../../../components/SocialButtons'
 
 import { useFonts } from 'expo-font'
+import { Input } from '../../../components/Input'
 
 export function SignIn() {
   const [fontsLoaded, fontError] = useFonts({
-    Poppins_400Regular: require('../../../../assets/fonts/poppins/Poppins_400Regular.ttf')
+    Poppins_400Regular: require('../../../../assets/fonts/poppins/Poppins_400Regular.ttf'),
+    Poppins_700Bold: require('../../../../assets/fonts/poppins/Poppins_700Bold.ttf')
   })
   if (!fontsLoaded && !fontError) {
     return null
@@ -30,19 +32,37 @@ export function SignIn() {
             style={[
               styles.fontStyle,
               styles.entrar,
-              { fontFamily: 'Poppins_400Regular' }
+              { fontFamily: 'Poppins_700Bold' }
             ]}
           >
             Entrar
           </Text>
         </View>
+        <Input placeHolder="Email" />
+        <Input placeHolder="Senha" />
         <Button title="Entrar" type={1} />
-        <View>
+        <View style={styles.subOptions}>
           <Pressable>
-            <Text>Cadastrar-se</Text>
+            <Text
+              style={{
+                fontFamily: 'Poppins_700Bold',
+                color: '#F6BE00',
+                textDecorationLine: 'underline'
+              }}
+            >
+              Cadastrar-se
+            </Text>
           </Pressable>
           <Pressable>
-            <Text>Esqueci a senha</Text>
+            <Text
+              style={{
+                fontFamily: 'Poppins_700Bold',
+                color: '#F6BE00',
+                textDecorationLine: 'underline'
+              }}
+            >
+              Esqueci a senha
+            </Text>
           </Pressable>
         </View>
         <View style={styles.socialLoginOptions}>

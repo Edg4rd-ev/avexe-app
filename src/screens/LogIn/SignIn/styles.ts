@@ -34,14 +34,12 @@ export const styles = StyleSheet.create({
     width: '85%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    gap: 30,
-    marginTop: 25
+    gap: 30
   },
   loginWrapper: {
     width: '85%',
     justifyContent: 'center',
-    alignItems: 'flex-start',
-    marginBottom: 20
+    alignItems: 'flex-start'
   },
   entrar: {
     width: '100%',
@@ -53,5 +51,12 @@ export const styles = StyleSheet.create({
     textShadowColor: 'hsla(0,0%,27%,0.3)',
     textShadowOffset: { width: 0.5, height: 1 },
     textShadowRadius: 2
+  },
+  subOptions: {
+    width: '85%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 5
   }
 })
