@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   signInOptions: {
-    flex: 1.5,
+    paddingVertical: 50,
     borderTopStartRadius: 80,
     backgroundColor: 'white',
     width: '100%',

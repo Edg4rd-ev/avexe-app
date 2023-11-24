@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   loginOptions: {
-    flex: 2,
+    paddingVertical: 40,
     borderTopStartRadius: 80,
     backgroundColor: 'white',
     width: '100%',

@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     borderEndWidth: 0.1,
     borderRadius: 100,
     padding: 16,
-    elevation: 2
+    elevation: 2,
+    fontSize: 18
   }
 })

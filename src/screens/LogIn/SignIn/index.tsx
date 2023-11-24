@@ -38,8 +38,8 @@ export function SignIn() {
             Entrar
           </Text>
         </View>
-        <Input placeHolder="Email" />
-        <Input placeHolder="Senha" />
+        <Input placeHolder="Email" keyboardType="email-address" />
+        <Input placeHolder="Senha" setVisible={true} />
         <Button title="Entrar" type={1} />
         <View style={styles.subOptions}>
           <Pressable>

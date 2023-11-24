@@ -62,7 +62,7 @@ export function Button({ title, type, openScreen }: ButtonT) {
           { width: '100%', alignItems: 'center' },
           pressed && { opacity: 0.8 }
         ]}
-        onPress={() => console.log()}
+        onPress={openScreen}
       >
         {({ pressed }) => {
           return (
