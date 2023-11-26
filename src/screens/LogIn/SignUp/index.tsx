@@ -27,7 +27,7 @@ export function SignUp() {
         />
       </View>
       <View style={styles.signUpOptions}>
-        <View style={styles.loginWrapper}>
+        <View style={styles.registerWrapper}>
           <Text
             style={[
               styles.fontStyle,
@@ -35,41 +35,15 @@ export function SignUp() {
               { fontFamily: 'Poppins_700Bold' }
             ]}
           >
-            Entrar
+            Cadastrar
           </Text>
         </View>
+        <Input placeHolder="Nome" keyboardType="default" />
+        <Input placeHolder="Sobrenome" keyboardType="default" />
         <Input placeHolder="Email" keyboardType="email-address" />
         <Input placeHolder="Senha" setVisible={true} />
-        <Button title="Entrar" type={1} />
-        <View style={styles.subOptions}>
-          <Pressable>
-            <Text
-              style={{
-                fontFamily: 'Poppins_700Bold',
-                color: '#F6BE00',
-                textDecorationLine: 'underline'
-              }}
-            >
-              Cadastrar-se
-            </Text>
-          </Pressable>
-          <Pressable>
-            <Text
-              style={{
-                fontFamily: 'Poppins_700Bold',
-                color: '#F6BE00',
-                textDecorationLine: 'underline'
-              }}
-            >
-              Esqueci a senha
-            </Text>
-          </Pressable>
-        </View>
-        <View style={styles.socialLoginOptions}>
-          <SocialButton title="google" bgColor="#DB4437" />
-          <SocialButton title="facebook" bgColor="#4267B2" />
-          <SocialButton title="twitter" bgColor="#1DA1F2" />
-        </View>
+        <Input placeHolder="Confirmar senha" setVisible={true} />
+        <Button title="Cadastrar" type={1} />
       </View>
     </View>
   )

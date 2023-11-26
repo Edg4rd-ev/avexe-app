@@ -58,5 +58,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 5
+  },
+  textStyle: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 20
   }
 })

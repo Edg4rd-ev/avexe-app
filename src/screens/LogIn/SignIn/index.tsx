@@ -7,6 +7,7 @@ import { SocialButton } from '../../../components/SocialButtons'
 
 import { useFonts } from 'expo-font'
 import { Input } from '../../../components/Input'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 export function SignIn() {
   const [fontsLoaded, fontError] = useFonts({
@@ -46,22 +47,20 @@ export function SignIn() {
             <Text
               style={{
                 fontFamily: 'Poppins_700Bold',
-                color: '#F6BE00',
-                textDecorationLine: 'underline'
+                color: '#F6BE00'
               }}
             >
-              Cadastrar-se
+              <Icon name="user-plus" size={15} /> Cadastrar-se
             </Text>
           </Pressable>
           <Pressable>
             <Text
               style={{
                 fontFamily: 'Poppins_700Bold',
-                color: '#F6BE00',
-                textDecorationLine: 'underline'
+                color: '#F6BE00'
               }}
             >
-              Esqueci a senha
+              <Icon name="lock" size={17} /> Esqueci a senha
             </Text>
           </Pressable>
         </View>
