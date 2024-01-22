@@ -8,14 +8,19 @@ import { SocialButton } from '../../../components/SocialButtons'
 import { useFonts } from 'expo-font'
 import { Input } from '../../../components/Input'
 import Icon from 'react-native-vector-icons/FontAwesome'
+import { useNavigation } from '@react-navigation/native'
 
 export function SignIn() {
+  const navigation = useNavigation()
   const [fontsLoaded, fontError] = useFonts({
     Poppins_400Regular: require('../../../../assets/fonts/poppins/Poppins_400Regular.ttf'),
     Poppins_700Bold: require('../../../../assets/fonts/poppins/Poppins_700Bold.ttf')
   })
   if (!fontsLoaded && !fontError) {
     return null
+  }
+  function openHomeScreen() {
+    navigation.navigate('home')
   }
   return (
     <View style={styles.container}>
@@ -41,7 +46,7 @@ export function SignIn() {
         </View>
         <Input placeHolder="Email" keyboardType="email-address" />
         <Input placeHolder="Senha" setVisible={true} />
-        <Button title="Entrar" type={1} />
+        <Button title="Entrar" type={1} openScreen={openHomeScreen} />
         <View style={styles.subOptions}>
           <Pressable>
             <Text
